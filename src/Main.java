@@ -25,7 +25,7 @@ public class Main {
                 System.out.println("""
                         
                         ***************************************************
-                        Bienvenido al Conversor de Moneda!!!                       
+                        Bienvenido al Conversor de Moneda!!!
                      
                         1) Dolar [USD] ==> Peso argentino [ARS]
                         2) Peso argentino [ARS] ==> Dolar [USD]
@@ -36,7 +36,7 @@ public class Main {
                         7) Salir
                         
                         Elije una opcion valida de la  lista anterior:
-                                                                                  """);
+                        """);
 
                 opcion = lectura.nextInt();
 
