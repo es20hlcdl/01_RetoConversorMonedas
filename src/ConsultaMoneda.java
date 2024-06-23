@@ -10,23 +10,7 @@ public class ConsultaMoneda {
 
 
 
-    public Monedas determinarMonedas(String tipoDeMoneda){
-        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/dcb5b4c6ed88dabd77cc4cbe//pair/"+tipoDeMoneda+"/GBP");
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(String.valueOf(direccion)))
-                .build();
 
-
-        try {
-            HttpResponse<String> response = null;
-            response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            return new Gson().fromJson(response.body(), Monedas.class);
-        } catch (Exception e) {
-            throw new RuntimeException("No encontre la moneda");
-        }
-
-    }
 
 
 
