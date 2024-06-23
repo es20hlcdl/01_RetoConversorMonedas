@@ -8,12 +8,6 @@ import java.net.http.HttpResponse;
 
 public class ConsultaMoneda {
 
-
-
-
-
-
-
     public Monedas monedaUSD_ARS(String tipoDeMoneda){
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/dcb5b4c6ed88dabd77cc4cbe//pair/USD/ARS");
         HttpClient client = HttpClient.newHttpClient();
