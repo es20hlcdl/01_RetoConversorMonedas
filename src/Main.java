@@ -9,14 +9,14 @@ public class Main {
         int opcion=9999;
         int cantidadConvertir;
 
-        double tasaCambioUSD_ARS = Double.valueOf(consulta.monedaUSD_ARS("USD").conversion_rate());
-        double tasaCambioARS_USD = Double.valueOf(consulta.monedaARS_USD("USD").conversion_rate());
+        double tasaCambioUSD_ARS = Double.parseDouble(consulta.monedaUSD_ARS("USD").conversion_rate());
+        double tasaCambioARS_USD = Double.parseDouble(consulta.monedaARS_USD("USD").conversion_rate());
 
-        double tasaCambioUSD_BRL = Double.valueOf(consulta.monedaUSD_BRL("COP").conversion_rate());
-        double tasaCambioBRL_USD = Double.valueOf(consulta.monedaBRL_USD("ARS").conversion_rate());
+        double tasaCambioUSD_BRL = Double.parseDouble(consulta.monedaUSD_BRL("COP").conversion_rate());
+        double tasaCambioBRL_USD = Double.parseDouble(consulta.monedaBRL_USD("ARS").conversion_rate());
 
-        double tasaCambioUSD_COP = Double.valueOf(consulta.monedaUSD_COP("BRL").conversion_rate());
-        double tasaCambioCOP_USD = Double.valueOf(consulta.monedaCOP_USD("COP").conversion_rate());
+        double tasaCambioUSD_COP = Double.parseDouble(consulta.monedaUSD_COP("BRL").conversion_rate());
+        double tasaCambioCOP_USD = Double.parseDouble(consulta.monedaCOP_USD("COP").conversion_rate());
 
         while (opcion!=8){
 
